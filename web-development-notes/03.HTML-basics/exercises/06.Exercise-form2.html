@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complex Form</title>
+
+</head>
+<body>
+    <form>
+        <h1>Complex Form</h1>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name1">Name: </label>
+            <input type="text" placeholder="Enter your name here" id="name1" name="name1">
+
+            <label for="email1">Email: </label>
+            <input type="email" placeholder="qwerty123@gmail.com" id="email1" name="email1">
+
+            <label for="phone1">Phone: </label>
+            <input type="tel" placeholder="Enter your phone number here" id="phone1">
+
+            <label for="dob">Date of Birth: </label>
+            <input type="date" id="dob">
+            <br>
+            <label for="gender">Gender: </label>
+            <input type="radio" id="gender" name="gender">Male
+            <input type="radio" id="gender" name="gender">Female
+            <input type="radio" id="gender" name="gender">Others
+
+            <label for="country">Country</label>
+            <select name="country" id="country">
+                <option value="in">India</option>
+                <option value="vide">Videshi</option>
+                <option value="uni">Another Universe</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>
+                <label for="address">Address street</label>
+                <input type="text" id="address" name="address" placeholder="Enter street address">
+
+                <label for="city">City</label>
+                <input type="text" placeholder="Enter your city" id="city" name="city">
+
+                <label for="state">State</label>
+                <input type="text" placeholder="Enter you state" id="state" name="state">
+
+                <label for="zipcode">Zip Code</label>
+                <input type="text" placeholder="Enter your zip Code" id="zipcode" name="zipcode">
+            </legend>
+        </fieldset>
+
+        <fieldset>
+            <legend>Other Information</legend>
+            <label for="comments">Comments</label>
+            <textarea name="comments" id="comments" placeholder="Comments here" rows="10" cols="30"></textarea>
+
+            <label for="termsservice">I agree to the terms of service</label>
+            <input type="checkbox" id="termsservice" name="termsservice">
+        </fieldset>
+        <br>
+        <button>Submit</button>
+
+
+    </form>
+
+</body>
+</html>
