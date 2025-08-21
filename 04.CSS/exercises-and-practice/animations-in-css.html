@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations in CSS</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .maindiv{
+            height: 100vh;
+            width: 100vw;
+            background-color: beige;
+            border: 5px solid red;
+        }
+        .box1{
+            height: 100px;
+            width: 400px;
+            margin: 20px;
+            background-color: blueviolet;
+            border-radius: 5px;
+            border: 3px dotted yellow;
+            position: relative;
+
+            animation-name: newanimation;
+            animation-duration: 4s;
+            animation-delay: 2s;
+            animation-iteration-count: 2;
+            animation-timing-function: linear;
+            animation-direction: alternate-reverse;
+
+        }
+        
+        @keyframes newanimation {
+            from{
+                top: 0;
+                left: 0;
+            }
+            to{
+                top: 0;
+                left: 1100px;
+            }
+            
+        }
+
+        .box2{
+            height: 100px;
+            width: 400px;
+            margin: 20px;
+            background-color: blueviolet;
+            border-radius: 5px;
+            border: 3px dotted yellow;
+            position: relative;
+
+            animation-name: nextboxanimation;
+            animation-duration: 4s;
+            animation-delay: 2s;
+            animation-iteration-count: 2;
+            animation-timing-function: linear;
+            animation-direction: alternate-reverse;
+
+        }
+        
+        @keyframes nextboxanimation {
+            from{
+                top: 400px;
+                left: 0;
+            }
+            to{
+                top: 400px;
+                left: 1100px;
+            }
+            
+        }
+
+        .circle{
+            height: 40px;
+            width: 40px;
+            background-color: black;
+            border-radius: 20px;
+            position: relative;
+            top: 30%;
+            left: 50%;
+            animation: 5s ease-in 1s infinite alternate none running circleanimation;
+        }
+
+        @keyframes circleanimation {
+            0%{
+                top: 1%;
+                left: 5%;
+            }
+            30%{
+                top: 5%;
+                left: 90%;
+            }
+            60%{
+                top: 50%;
+                left: 10%;
+            }          
+            100%{
+                top: 50%;
+                left: 90%;
+            }  
+        }
+
+    </style>
+</head>
+<body>
+    <div class="maindiv">
+        <div class="box1">
+
+        </div>
+
+        <div class="circle">
+
+        </div>
+
+        <div class="box2">
+
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Media Query</title>
+    <style>
+        .bigcontainer{
+            border: 10px solid black;
+            background-color: beige;
+            display: flex;
+            #flex-direction: row;
+            width: 1400px;
+            margin: 20px;
+            padding: 10px;
+        }
+        @media (min-width:600px) {
+            .bigcontainer{
+                flex-direction: column;
+            }
+            
+        }
+        .leftybox{
+            border: 2px solid yellow;
+            background-color: blanchedalmond;
+            width: 50%;
+            padding: 5px;
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+        .rightybox{
+            border: 2px solid yellow;
+            background-color: grey;
+            width: 50%;
+            margin: 10px;
+            padding: 5px;
+        }
+        img{
+            height: 80%;
+            width: 40%;
+        }
+        p{
+            border: 1px solid grey;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="bigcontainer">
+        <div class="leftybox">
+            <p>first text box</p>
+            <p>second text box</p>
+        </div>
+
+        <div class="rightybox">
+            <img src="image (3).png" alt="Mr.Wick">
+        </div>
+    </div>
+</body>
+</html>
